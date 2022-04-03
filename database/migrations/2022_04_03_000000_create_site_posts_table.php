@@ -16,7 +16,7 @@ class CreateSitePostsTable extends Migration
         Schema::create('site_posts', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('site_id');
-            $table->text('title')->unique();
+            $table->string('title')->unique();
             $table->text('description');
             $table->timestamps();
         });

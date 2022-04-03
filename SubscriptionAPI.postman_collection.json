@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "92f7562f-0db4-42d8-aa91-881aeddbc203",
+		"name": "SubscriptionAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sites",
+			"item": [
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/subscription-api/public/api/sites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"subscription-api",
+								"public",
+								"api",
+								"sites"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Site Posts",
+			"item": [
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/subscription-api/public/api/site-posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"subscription-api",
+								"public",
+								"api",
+								"site-posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Test Post",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Testing only",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/subscription-api/public/api/site-posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"subscription-api",
+								"public",
+								"api",
+								"site-posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscribers",
+			"item": [
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/subscription-api/public/api/subscribers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"subscription-api",
+								"public",
+								"api",
+								"subscribers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Panji",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "panjiwiramanik70@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/subscription-api/public/api/subscribers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"subscription-api",
+								"public",
+								"api",
+								"subscribers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscribe Site",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "website_url",
+									"value": "https://test.com",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "panjiwiramanik70@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/subscription-api/public/api/subscribers/subscribe-site",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"subscription-api",
+								"public",
+								"api",
+								"subscribers",
+								"subscribe-site"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
